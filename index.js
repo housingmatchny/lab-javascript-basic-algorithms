@@ -16,7 +16,11 @@ if (hacker1.length > hacker2.length) {
   }
 
 // Iteration 3: Loops
-console.log(hacker1.toUpperCase());
+let spaceUpperCase = "";
+for (let i = 0; i<hacker1.length; i++) {
+    spaceUpperCase += `${hacker1[i].toUpperCase()} `;
+}
+console.log(spaceUpperCase);
 
 let hacker2_rev = "";
 for (let i = hacker2.length-1; i>=0; i--) {
